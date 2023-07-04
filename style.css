@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(119, 5, 104);
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    box-shadow: inset -1px 3px 8px 5px #383c41, 2px 5px 16px 7px #ff0890, 7px 5px 15px 5px rgba(191,15,163,0);
+}
+
+.description {
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+.duration {
+    width: 300px;
+    margin-top: 25px;
+}
+
+.bar {
+    width: 300px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+progress {
+    height: 6px;
+    width: 0%;
+    background-color: #333;
+}
+
+.score {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+.temp {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.player {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.button-play, .button-pause {
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.arrows {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.button-pause {
+    display: none;
+}
+
+.slider_container {
+    width: 300px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume-down {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #eee;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #5b5683;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.volume_slider:hover {
+    opacity: 1.0;
+}
+
+.volume-up {
+    font-size: 25px;
+    margin-left: 2px;
+    cursor: pointer;
+}
